@@ -8,16 +8,13 @@ def draw(x, y):
     if (x == "A" and y == "X") or (x == "B" and y == "Y") or (x == "C" and y == "Z"):
         return True
 
-
 def win(x, y):
     if (x == "A" and y == "Y") or (x == "B" and y == "Z") or (x == "C" and y == "X"):
         return True
 
-
 def loss(x, y):
     if (x == "A" and y == "Z") or (x == "B" and y == "X") or (x == "C" and y == "Y"):
         return True
-
 
 def addShapePoint(x):
     if x == "X":
@@ -27,12 +24,10 @@ def addShapePoint(x):
     elif x == "Z":
         return 3
 
-
 for i in lines:
 
     p1 = i[0]
     p2 = i[2]
-
     if draw(p1, p2):
         total_score += 3 + addShapePoint(p2)
     elif win(p1, p2):
@@ -54,7 +49,6 @@ def beat(x):
     elif x == "C":
         return 7
 
-
 def loseTo(x):
     if x == "A":
         return 3
@@ -63,7 +57,6 @@ def loseTo(x):
     elif x == "C":
         return 2
 
-
 def drawWith(x):
     if x == "A":
         return 4
@@ -71,7 +64,6 @@ def drawWith(x):
         return 5
     elif x == "C":
         return 6
-
 
 for i in lines:
 

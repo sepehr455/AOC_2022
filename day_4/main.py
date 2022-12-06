@@ -35,7 +35,6 @@ def overlap(num1, num2, num3, num4):
     else:
         return False
 
-
 for i in lines:
     y = i.replace(",", " ").replace("-", " ").strip()
     elements = y.split(" ")
